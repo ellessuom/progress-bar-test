@@ -1,0 +1,63 @@
+// import the _global.scss file
+@import '../assets/global';
+
+.ShowProgress {
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    background-color: rgba(pink, .1);
+    &__Bar {
+        height: 5px;
+        width: 100%;
+        position: relative;
+        background-color: $blue;
+
+        &::before {
+            content: '0%';
+            position: absolute;
+            top: $size-top-distance;
+            left: -30px;
+        }
+
+        &::after {
+            content: '100%';
+            position: absolute;
+            top: $size-top-distance;
+            right: -50px;
+        }
+
+    }
+
+    ul {
+        position: relative;
+
+        li {
+            list-style: none;
+            position: absolute;
+            top: -35px;
+
+            background: white;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 3px 5px;
+            width: 60px;
+            text-align: center;
+
+            // if text is too long, it will be hidden and replaced with '...'
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.YouLabel {
+    border: 1px solid red;
+    color: red;
+}
+
+.OtherLabel { 
+    color: royalblue;
+    border: 1px solid royalblue;
+}

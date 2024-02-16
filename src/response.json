@@ -1,0 +1,18 @@
+{
+    "routeName": "To the dunes and back",
+    "myPosition": 0.1,
+    "peopleOnRoute": [
+      {
+        "name": "Lex",
+        "position": 0.4
+      },
+      {
+        "name": "Frikkie",
+        "position": 0.25
+      },
+      {
+        "name": "Ronald",
+        "position": 0.75
+      }
+    ]
+}
