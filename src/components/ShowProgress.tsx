@@ -29,11 +29,11 @@ const ProgressLabel = ({ name, position, main, zIndex }: PersonOnRoute & { main?
 )
 
 // should take a number between 0 and 1 and return a number between 0 and 100, with 2 decimal places
-const parsePosition = (position: number) => {
+export const parsePosition = (position: number) => {
     return (position * 100).toFixed(2)
 }
 
-const parseTitle = (position: MyPosition) => {
+export const parseTitle = (position: MyPosition) => {
     return position === 1? 'finished!' : `${parsePosition(position)}%`
 }
 
